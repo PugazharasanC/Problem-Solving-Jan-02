@@ -33,15 +33,15 @@
 # Day 2: Recursion & Searching Algorithms
 ## Key Topics: Recursion, linear and binary search, and basic search operations.
 ## Session Focus:
-Understand recursion and solve problems like factorials and Fibonacci.
-Learn linear and binary search techniques to find elements in arrays.
-Practice simple search-based problems.
+- Understand recursion and solve problems like factorials and Fibonacci.
+- Learn linear and binary search techniques to find elements in arrays.
+- Practice simple search-based problems.
 ## Session Practice Questions:
-Calculate the factorial of a number recursively.
-Implement linear search to find an element in an array.
-Implement binary search on a sorted array.
-Find the first and last occurrence of a target in an array.
-Search for a target in a rotated sorted array.
+1. Calculate the factorial of a number recursively.
+1. Implement linear search to find an element in an array.
+1. Implement binary search on a sorted array.
+1. Find the first and last occurrence of a target in an array.
+1. Search for a target in a rotated sorted array.
 ## Post-session Practice Questions:
 1. Count occurrences of a target using binary search.
 1. Find the index where an element should be inserted in a sorted array.
@@ -57,15 +57,15 @@ Search for a target in a rotated sorted array.
 # Day 3: Arrays & Array Methods
 ## Key Topics: Arrays, rotations, sorting, searching, and manipulation.
 ## Session Focus:
-Array manipulation: rotating arrays, finding the second-largest element, and array sums.
-Sorting basics: bubble sort, selection sort.
-Removing duplicates from arrays and basic search operations.
+- Array manipulation: rotating arrays, finding the second-largest element, and array sums.
+- Sorting basics: bubble sort, selection sort.
+- Removing duplicates from arrays and basic search operations.
 ## Session Practice Questions:
-Rotate an array by one position.
-Find the second-largest element in an array.
-Remove duplicates from a sorted array.
-Calculate the sum of elements in an array.
-Find the number of occurrences of an element in an array.
+1. Rotate an array by one position.
+1. Find the second-largest element in an array.
+1. Remove duplicates from a sorted array.
+1. Calculate the sum of elements in an array.
+1. Find the number of occurrences of an element in an array.
 ## Post-session Practice Questions:
 1. Merge two sorted arrays.
 1. Reverse the elements in an array.
@@ -81,14 +81,14 @@ Find the number of occurrences of an element in an array.
 # Day 4: Stacks, Queues, and Linked Lists
 ## Key Topics: Stacks, queues, linked lists, and related operations.
 ## Session Focus:
-Learn stack and queue operations: implementing stacks using arrays, checking for balanced parentheses, and reversing strings using stacks.
-Linked list operations: insertion, deletion, reversing, and detecting cycles in linked lists.
+- Learn stack and queue operations: implementing stacks using arrays, checking for balanced  parentheses, and reversing strings using stacks.
+- Linked list operations: insertion, deletion, reversing, and detecting cycles in linked lists.
 ## Session Practice Questions:
-Implement a stack using an array.
-Reverse a string using a stack.
-Check for balanced parentheses in an expression.
-Insert a node at the beginning of a linked list.
-Delete the last node in a linked list.
+1. Implement a stack using an array.
+1. Reverse a string using a stack.
+1. Check for balanced parentheses in an expression.
+1. Insert a node at the beginning of a linked list.
+1. Delete the last node in a linked list.
 ## Post-session Practice Questions:
 1. Reverse a linked list iteratively.
 1. Detect a cycle in a linked list using fast and slow pointers.
@@ -104,14 +104,14 @@ Delete the last node in a linked list.
 # Day 5: Trees, Binary Search Trees (BST), and Recursion
 ## Key Topics: Trees, binary search trees (BST), tree traversals, recursion techniques.
 ## Session Focus:
-Learn about binary trees and binary search trees: traversals (pre-order, in-order, post-order), finding LCA (lowest common ancestor), and tree height.
-Recursive approaches for tree-related problems.
+-Learn about binary trees and binary search trees: traversals (pre-order, in-order, post-order), finding LCA (lowest common ancestor), and tree height.
+-Recursive approaches for tree-related problems.
 ## Session Practice Questions:
-Find the height of a binary tree.
-Perform a pre-order traversal of a binary tree.
-Check if a binary tree is a binary search tree (BST).
-Find the lowest common ancestor (LCA) of two nodes in a BST.
-Count the number of leaf nodes in a binary tree.
+1. Find the height of a binary tree.
+1. Perform a pre-order traversal of a binary tree.
+1. Check if a binary tree is a binary search tree (BST).
+1. Find the lowest common ancestor (LCA) of two nodes in a BST.
+1. Count the number of leaf nodes in a binary tree.
 ## Post-session Practice Questions:
 1. Perform an in-order traversal iteratively.
 1. Find the diameter of a binary tree.
@@ -127,15 +127,15 @@ Count the number of leaf nodes in a binary tree.
 # Day 6: Recursion, Sliding Window, Two Pointers, and Hashing
 ## Key Topics: Recursion, sliding window, and hashing.
 ## Key Focus:
-Learn recursive problem-solving approaches for problems like factorial, Fibonacci, and palindrome checking.
-Understand sliding window techniques for finding subarrays and substrings.
-Hashing for tracking counts, finding duplicates, and other problems.
+- Learn recursive problem-solving approaches for problems like factorial, Fibonacci, and palindrome checking.
+- Understand sliding window techniques for finding subarrays and substrings.
+- Hashing for tracking counts, finding duplicates, and other problems.
 ## Key Practice Questions:
-Calculate the factorial of a number recursively.
-Find the nth Fibonacci number using recursion.
-Check if a string is a palindrome using recursion.
-Find the length of the longest substring without repeating characters (sliding window).
-Implement a recursive binary search.
+1. Calculate the factorial of a number recursively.
+1. Find the nth Fibonacci number using recursion.
+1. Check if a string is a palindrome using recursion.
+1. Find the length of the longest substring without repeating characters (sliding window).
+1. Implement a recursive binary search.
 ## Post-session Practice Questions:
 1. Solve the Tower of Hanoi problem.
 1. Reverse a string recursively.
