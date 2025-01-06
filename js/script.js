@@ -1,24 +1,27 @@
-function searchRotated(arr, target) {
-  let start = 0,
-    end = arr.length - 1;
+function sqrt(num) {
+  if (num === 0 || num === 1) return num; // Handle edge cases for 0 and 1
+
+  let start = 0;
+  let end = num / 2; // Square root will not be larger than num/2 for num > 1
+
+  // Start binary search
   while (start <= end) {
-    const mid = Math.floor((start + end) / 2);
-    if (arr[mid] == target) return mid;
-    else if (arr[mid] < target) {
-      if (arr[end] < target) {
-        end = mid - 1;
-      } else {
-        start = mid + 1;
-      }
-    } else if (arr[mid] > target) {
-      if (arr[start] > target) {
-        start = mid + 1;
-      } else {
-        end = mid - 1;
-      }
+    let mid = Math.floor((start + end) / 2);
+    let midSquared = mid * mid;
+
+    // If mid^2 is equal to num, return mid
+    if (midSquared === num) return mid;
+
+    // Adjust search range
+    if (midSquared < num) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
     }
   }
-  return -1;
+
+  // Return the integer part of the square root
+  return end;
 }
-debugger;
-console.log(searchRotated([7, 8, 9, 10, 1, 2, 3, 4, 5, 6], 10));
+
+console.log(sqrt(13)); // Should return 3 (since sqrt(13) ≈ 3.605)
