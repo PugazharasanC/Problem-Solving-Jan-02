@@ -1,27 +1,89 @@
-function sqrt(num) {
-  if (num === 0 || num === 1) return num; // Handle edge cases for 0 and 1
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+class LinkedList {
+  constructor() {
+    this.list = null;
+  }
 
-  let start = 0;
-  let end = num / 2; // Square root will not be larger than num/2 for num > 1
+  insertNode(value, insertFirst = true) {
+    if (insertFirst) this.insertAtFirst(value);
+    else this.insertAtLast(value);
+  }
 
-  // Start binary search
-  while (start <= end) {
-    let mid = Math.floor((start + end) / 2);
-    let midSquared = mid * mid;
+  insertAtFirst(value) {
+    const newNode = new Node(value);
+    newNode.next = this.list;
+    this.list = newNode;
+  }
 
-    // If mid^2 is equal to num, return mid
-    if (midSquared === num) return mid;
-
-    // Adjust search range
-    if (midSquared < num) {
-      start = mid + 1;
+  insertAtLast(value) {
+    if (this.list == null) {
+      this.list = new Node(value);
     } else {
-      end = mid - 1;
+      let temp = this.list;
+      while (temp.next != null) {
+        temp = temp.next;
+      }
+      temp.next = new Node(value);
+    }
+  }
+  deleteLastNode() {
+    if (this.list == null) {
+      return -1;
+    } else if (this.list.next == null) {
+      this.list = null;
+    } else {
+      let temp = this.list;
+      while (temp.next.next != null) {
+        temp = temp.next;
+      }
+      temp.next = null;
     }
   }
 
-  // Return the integer part of the square root
-  return end;
-}
+  middleElement() {
+    let slow = this.list;
+    let fast = this.list;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return slow?.data;
+  }
 
-console.log(sqrt(13)); // Should return 3 (since sqrt(13) ≈ 3.605)
+  dedectCycle() {
+    if (this.list == null) return false;
+    let slow = this.list;
+    let fast = this.list;
+    do {
+      slow = slow.next;
+      fast = fast.next.next;
+    } while (slow != fast && fast != null && fast.next != null);
+    return slow == fast;
+  }
+  makeCycle() {
+    let temp = this.list;
+    let x = null;
+    while (temp.next != null) {
+      if (Math.random() < 0.3) {
+        x = temp;
+      }
+      temp = temp.next;
+    }
+    temp.next = x;
+    return x;
+  }
+  print() {
+    const data = [];
+    let temp = this.list;
+    while (temp) {
+      data.push(temp.data);
+      temp = temp.next;
+    }
+    console.log(data.join(" -> "));
+  }
+}
