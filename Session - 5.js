@@ -1,3 +1,26 @@
+//? Day 5: Trees, Binary Search Trees (BST), and Recursion
+//* Key Topics: Trees, binary search trees (BST), tree traversals, recursion techniques.
+//? Session Focus:
+//* Learn about binary trees and binary search trees: traversals (pre-order, in-order, post-order), finding LCA (lowest common ancestor), and tree height.
+//* Recursive approaches for tree-related problems.
+//? Session Practice Questions:
+//? Find the height of a binary tree.
+//? Perform a pre-order traversal of a binary tree.
+//? Check if a binary tree is a binary search tree (BST).
+//? Find the lowest common ancestor (LCA) of two nodes in a BST.
+//! Count the number of leaf nodes in a binary tree.
+//? Post-Session Practice Questions:
+// // Perform an in-order traversal iteratively.
+// // Find the diameter of a binary tree.
+// // Check if two binary trees are identical.
+// // Convert a binary tree to a doubly linked list.
+// // Construct a binary tree from its inorder and preorder traversals.
+// // Print all nodes at k distance from the root.
+// // Serialize and deserialize a binary tree.
+// // Find the level with the maximum sum in a binary tree.
+// // Calculate the depth of the deepest leaf node.
+// // Convert a BST to a balanced BST.
+
 class Node {
   constructor(data) {
     this.data = data;
