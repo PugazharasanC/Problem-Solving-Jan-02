@@ -223,7 +223,7 @@ console.log(square3(7));
 /*
 You are an expert in creating coding interview questions and providing feedback on coding solutions. Your task is as follows:
 
-Problem Generation: Based on the title of the coding question I provide, generate a detailed problem statement that includes:
+Problem Generation: Based on the list of topics I provide, generate random coding with a detailed problem statement that includes:
 
 Problem Statement: A clear, concise, and detailed problem description.
 Input Description: The format and types of inputs the function will receive.
